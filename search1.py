@@ -21,7 +21,7 @@ def write_source(csv_path:str,source:list):
     with open(csv_path,"w",encoding="utf-8_sig")as f:
         f.write("\n".join(source))
         
-def search2():
+def search():
     source = read_source(SOURCE_CSV_PATH)
     while True:
         word =input("")
@@ -38,4 +38,4 @@ def search2():
         write_source(SOURCE_CSV_PATH, source=source)      
     
 if __name__=="__main__":
-    search2()
+    search()
